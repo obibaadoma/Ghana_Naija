@@ -1,67 +1,317 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Landing Page</title>
-  </head>
-  <body>
-    <header id="header">
-      <img
-        id="header-img"
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-      />
-      <div id="do"></div>
-      <nav id="nav-bar">
-        <a class="nav-link" href="#pro">Features</a>
-        <a class="nav-link" href="#video">How It Works</a>
-        <a class="nav-link" href="#email">Pricing</a>
-      </nav>
-    </header>
-    <br />
-    <br />
-    <main>
-      <div id="lo">
-        <h1>Subscribe for Our weekly Newsletter</h1>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <br />
+<!--
+<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+-->
 
-          <input type="email" id="email" placeholder="Your Email" required />
-          <br />
-          <input type="submit" id="submit" value="Submit" />
-        </form>
-      </div>
-      <br />
-      <br />
-      <iframe
-        id="video"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/po0jY4WvCIc"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <br />
-      <div id="pro">
-        <h1>Premium Materials</h1>
-        <p>
-          Our trombones use the shiniest brass which is sourced locally. This
-          will increase the longevity of your purchase.
-        </p>
-        <br />
-        <h1>Fast Shipping</h1>
-        <p>
-          We make sure you recieve your trombone as soon as we have finished
-          making it. We also provide free returns if you are not satisfied.
-        </p>
-        <br />
-        <h1>Quality Assurance</h1>
-        <p>
-          For every purchase you make, we will ensure there are no damages or
-          faults and we will check and test the pitch of your instrument.
-        </p>
-      </div>
-    </main>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>FreeCodeCamp - Product Landing Page</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+  </head>
+  
+  
+  <body>
+    
+    <div id="everything" class="container-fluid">
+      
+      <header id="header">
+        
+        <nav id="nav-bar" class="navbar navbar-expand narbar-light bg-light">
+          
+          <a id="bookslogo" class="navbar-brand" href="#header-img"> 
+            <img id="header-img" src="https://cdn.pixabay.com/photo/2012/04/03/13/26/book-25155_960_720.png" height="50px" width="auto">
+            Books
+          </a>
+  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
+          </button>
+            
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            
+            <div class="navbar-nav" id="navbarLinks">
+      
+              <a class="nav-item nav-link" href="#features">
+                Features
+              </a>
+      
+              <a class="nav-item nav-link" href="#how">
+                How
+              </a>
+      
+              <a class="nav-item nav-link" href="#pricing">
+                Pricing
+              </a>
+    
+            </div>
+              
+          </div>
+        </nav>
+      </header>
+      
+      <div id="content">
+          <p id="features" class="container">
+          
+          <h3 class="text-center"> 
+              Features 
+          </h3>
+            <div class="row">
+          
+              <div class="col-2">
+          
+                <img class="feature-images" src="https://www.proprofs.com/knowledgebase/call-center-software/knowledge-base-software-for-call-centers/img/Manage_knowledge_with_multiple_teams.png?v=2">
+            
+              </div>
+               
+              <div class="col-8">
+              
+                <h5> 
+                  Knowledge
+                </h5>
+
+                <p>
+                  Non-fiction books are comprised the best knowledge that the author gained from their many years of study of their are of expertise.
+                </p>
+              
+              </div>
+            
+              <div class="col-2">
+              
+              </div>  
+            </div>
+          
+            <div class="row">
+          
+              <div class="col-2">
+
+                <img class="feature-images" src="http://www.thecupajoe.com/wordpress/wp-content/uploads/2015/03/focus.png">
+
+              </div>
+
+              <div class="col-10">
+              
+                <h5> 
+                  Focus
+                </h5>
+              
+                <p>
+                  Unlike blog posts and news articles, sitting down with a book takes long periods of focus and concentration. Over time, reading books helps you improve your focus.
+                </p>
+              
+              </div>      
+               
+            </div>
+                
+            <div class="row">
+
+              <div class="col-2">
+
+                <img class="feature-images" src="http://www.clinicians.co.nz/userfiles/image/Article%20Images/good-stress-bad-stress.jpg">
+
+              </div>
+
+              <div class="col-10">
+
+                <h5> 
+                  Reduces Stress
+                </h5>
+
+                <p>
+                  A 2009 study at the University of Sussex found that reading for only 6 minutes can reduce stress levels by up to 68%.
+                </p>
+
+              </div>      
+
+            </div>
+
+          </p>
+
+          <p class="container" id="how">
+
+            <h3 class="text-center">
+              How to Read Books 
+            </h3>
+
+            <iframe id="video" width="420" height="315" src="https://www.youtube.com/embed/eTFy8RnUkoU?autoplay=0">
+            </iframe>
+
+          </p>
+
+
+          <p id="pricing">
+
+            <h3 class="text-center"> 
+              Pricing 
+            </h3>
+              
+            <div id="pricing-section">
+              <div class="flex-container">
+              
+                <div class="flex-boxes text-center">
+                
+                    <h5 class="flex-headings">
+                    E-book 
+                    </h5>
+                
+					<p class="flex-content">
+
+					  <p class="text-center"> 
+						Easy to carry 
+					  </p>
+					  <p class="text-center"> 
+						Cheapest 
+					  </p>
+					  <p class="text-center"> 
+						Convenient 
+					  </p>
+					  <p class="text-center"> 
+						Easily distracted 
+					  </p>
+
+					
+					  <p>
+						<div class="text-center">
+						  <button type="button" class="btn btn-warning">Buy on Kindle</button>
+						</div>
+					  </p> 
+		  
+					</p>
+              
+                </div>
+              
+				  <div class="flex-boxes">
+				
+					<h5 class="flex-headings"> 
+					  Print Books 
+					</h5>
+				
+					<p class="flex-content">
+
+					  <p class="text-center"> 
+						Better feeling 
+					  </p>
+					  <p class="text-center"> 
+						Better focus 
+					  </p>
+					  <p class="text-center"> 
+						Free from libraries 
+					  </p>
+					  <p class="text-center"> 
+						Not practical 
+					  </p>
+					
+					  <p>
+						<div class="text-center">
+						  <button type="button" class="btn btn-warning">
+							Buy on Amazon
+						  </button>
+						</div>
+					  </p> 
+				  
+					</p>
+
+				  </div>
+              
+                  <div class="Flexbox">
+                
+                    <h5 class="flex-headings">
+                      Audiobooks 
+                    </h5>
+
+                    <p class="flex-content">
+
+                      <p class="text-center"> 
+                        Good for listeners 
+                      </p>
+
+                      <p class="text-center"> 
+                        Easy to multitask 
+                      </p>
+
+                      <p class="text-center"> 
+                        Better than radio 
+                      </p>
+
+                      <p class="text-center"> 
+                        Expensive 
+                      </p>
+
+                      <p>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-warning">
+                            Buy on Audible
+                          </button>
+                        </div>
+                      </p>  
+                    </p>                
+                
+                  </div>
+              
+               </div>
+            </div>
+    
+          </p>
+
+
+            <p id="email-form" class="container text-center">
+
+
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+				  <p>
+					<label for="email" id="email-label" class="text-center"> 
+						Join the mailing list for new book recommendations:
+					</label>
+					  <input id="email" type="email" name="email" placeholder="Enter your email" class="form-control" required>
+				  </p>
+
+				  <p>
+					<div>
+					  <input id="submit" type="submit" value="Submit" class="btn btn-success block-center">
+					</div> 
+				  </p>
+				</form>
+            </p>
+		</div>
+
+        <footer id="footer">
+          <div id="footerList">
+            <p class="footer-items">
+              <a href="#">
+                Privacy
+              </a>
+            </p>
+            <p class="footer-items">
+              <a href="#">
+                Terms
+              </a>
+            </p>
+            <p class="footer-items">
+              <a href="#">
+                Contact
+              </a>
+            </p>
+          </div>
+          <span id="copyrightText">
+            Copyright 2018
+          </span>
+
+        </footer>
+
+     </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
   </body>
 </html>
+
