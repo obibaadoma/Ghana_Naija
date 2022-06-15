@@ -1,0 +1,121 @@
+#everything {
+  background-color: AliceBlue ;
+  padding-top: 70px;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0px;
+  width: 98%;
+}
+
+.nav-link {
+  padding: 0 35px !important;
+}
+
+.Flexbox {
+  height: 280px;
+  width: 240px;
+  border: 1px solid black;
+  margin: 20px auto 20px auto;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.flex-headings {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: darkgrey;
+  border-radius: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.feature-images {
+  height: 50px;
+  width: auto;
+  float: right;
+}
+
+#video {
+  display: block;
+  margin: auto;
+}
+
+#form {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  width: 50%;
+  text-align: center;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+#footerList {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-items {
+  padding: 0 10px;
+}
+
+#copyrightText {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font: #444;
+}
+
+@media only screen and (max-width: 330px) {
+  #video {
+    width: 240px;
+    height: 180px; 
+  }
+  
+  #bookslogo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #video {
+    width: 320px;
+    height: 210px; 
+    }
+  
+  #header-img {
+    display: none;
+  }
+  
+  #content {
+  margin-top: 60px;
+  }
+  
+  #nav-bar {
+    width: 100%;
+  }
+  
+  .feature-images {
+  height: 33px;
+  width: auto;
+  float: right;
+  }
+  
+}
+
+@media only screen and (max-width: 520px) {
+.nav-link {
+  padding: 0 15px !important;
+  }
+}
